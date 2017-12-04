@@ -19,14 +19,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellIdentifier" id="dHJ-lt-Aou">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellIdentifier" id="dHJ-lt-Aou" customClass="ToDoCell" customModule="ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dHJ-lt-Aou" id="lK5-je-bf5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzl-Wz-eFA">
+                                            <rect key="frame" x="8" y="3" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="THd-aN-eoF"/>
+                                                <constraint firstAttribute="width" constant="36" id="kgY-zo-MM9"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="checkmark-flat.png"/>
+                                            <state key="selected" backgroundImage="checkmark-flat-2.png"/>
+                                            <connections>
+                                                <action selector="completeButtonTapped:" destination="dHJ-lt-Aou" eventType="touchUpInside" id="ord-Qh-0rD"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTf-oj-Q07">
+                                            <rect key="frame" x="52" y="12" width="299" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jzl-Wz-eFA" firstAttribute="leading" secondItem="lK5-je-bf5" secondAttribute="leading" constant="8" id="6L2-BO-iOX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GTf-oj-Q07" secondAttribute="trailing" constant="8" id="FmJ-Lg-lzU"/>
+                                        <constraint firstItem="GTf-oj-Q07" firstAttribute="leading" secondItem="jzl-Wz-eFA" secondAttribute="trailing" constant="8" id="K3z-Yi-Axr"/>
+                                        <constraint firstItem="GTf-oj-Q07" firstAttribute="centerY" secondItem="lK5-je-bf5" secondAttribute="centerY" id="XOX-Ho-cBx"/>
+                                        <constraint firstItem="jzl-Wz-eFA" firstAttribute="centerY" secondItem="lK5-je-bf5" secondAttribute="centerY" id="wMV-nl-lLa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="isCompleteButton" destination="jzl-Wz-eFA" id="vSZ-mU-5r5"/>
+                                    <outlet property="titleLabel" destination="GTf-oj-Q07" id="cHg-3H-skv"/>
                                     <segue destination="eH4-i9-qQX" kind="show" identifier="showDetails" id="nVo-bk-4h2"/>
                                 </connections>
                             </tableViewCell>

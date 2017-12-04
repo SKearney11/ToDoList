@@ -18,6 +18,7 @@
 		B425A9771FD45076002221DB /* checkmark-flat.png in Resources */ = {isa = PBXBuildFile; fileRef = B425A9751FD45076002221DB /* checkmark-flat.png */; };
 		B425A9781FD45076002221DB /* checkmark-flat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B425A9761FD45076002221DB /* checkmark-flat-2.png */; };
 		B466E0DD1FD0D13E00E146D0 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466E0DC1FD0D13E00E146D0 /* ToDoViewController.swift */; };
+		B4EEEB191FD48B51007498A6 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEEB181FD48B51007498A6 /* ToDoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		B425A9751FD45076002221DB /* checkmark-flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-flat.png"; sourceTree = "<group>"; };
 		B425A9761FD45076002221DB /* checkmark-flat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-flat-2.png"; sourceTree = "<group>"; };
 		B466E0DC1FD0D13E00E146D0 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		B4AC3B4C1FD5ADC400E3CE7A /* ToDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoList.entitlements; sourceTree = "<group>"; };
+		B4EEEB181FD48B51007498A6 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 		B40584A41FC87C8F00543EE0 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				B4AC3B4C1FD5ADC400E3CE7A /* ToDoList.entitlements */,
+				B4EEEB181FD48B51007498A6 /* ToDoCell.swift */,
 				B40584A51FC87C8F00543EE0 /* AppDelegate.swift */,
 				B40584D31FC881BA00543EE0 /* ToDo.swift */,
 				B40584D51FC882AA00543EE0 /* ToDoTableViewController.swift */,
@@ -206,6 +211,11 @@
 					B40584A11FC87C8F00543EE0 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					B40584B51FC87C8F00543EE0 = {
 						CreatedOnToolsVersion = 9.1;
@@ -277,6 +287,7 @@
 				B40584A61FC87C8F00543EE0 /* AppDelegate.swift in Sources */,
 				B40584D61FC882AA00543EE0 /* ToDoTableViewController.swift in Sources */,
 				B40584D41FC881BA00543EE0 /* ToDo.swift in Sources */,
+				B4EEEB191FD48B51007498A6 /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +457,7 @@
 				DEVELOPMENT_TEAM = 87TGSG2P58;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = s.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ToDoList111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +472,7 @@
 				DEVELOPMENT_TEAM = 87TGSG2P58;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = s.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ToDoList111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

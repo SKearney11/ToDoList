@@ -9,14 +9,29 @@
 import Foundation
 
 
-struct ToDo{
+struct ToDo: Codable{
+    //set up location to store data
+    static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveUrl = DocumentsDirectory.appendingPathComponent("todos") .appendingPathExtension("plist")
+    
     var title: String
     var isComplete: Bool
     var dueDate: Date
     var notes: String?
     
+    //load todos from disk
     static func loadToDos() -> [ToDo]? {
-        return nil
+        guard let codedToDos = try? Data(contentsOf: ArchiveUrl)
+            else{return nil}
+        let propertyListDecoder = PropertyListDecoder()
+        return try? propertyListDecoder.decode(Array<ToDo>.self, from: codedToDos)
+    }
+    
+    //save todos to disk
+    static func saveToDos(_ todos: [ToDo]){
+        let propertyListEncoder = PropertyListEncoder()
+        let codedToDos = try? propertyListEncoder.encode(todos)
+        try? codedToDos?.write(to: ArchiveUrl, options: .noFileProtection)
     }
     
     static let dueDateFormatter: DateFormatter = {
