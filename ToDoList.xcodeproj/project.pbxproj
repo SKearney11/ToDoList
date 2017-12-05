@@ -15,6 +15,7 @@
 		B40584C61FC87C8F00543EE0 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40584C51FC87C8F00543EE0 /* ToDoListUITests.swift */; };
 		B40584D41FC881BA00543EE0 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40584D31FC881BA00543EE0 /* ToDo.swift */; };
 		B40584D61FC882AA00543EE0 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40584D51FC882AA00543EE0 /* ToDoTableViewController.swift */; };
+		B40E55B81FD606D500E43FD9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E55B71FD606D500E43FD9 /* AuthViewController.swift */; };
 		B425A9771FD45076002221DB /* checkmark-flat.png in Resources */ = {isa = PBXBuildFile; fileRef = B425A9751FD45076002221DB /* checkmark-flat.png */; };
 		B425A9781FD45076002221DB /* checkmark-flat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B425A9761FD45076002221DB /* checkmark-flat-2.png */; };
 		B466E0DD1FD0D13E00E146D0 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466E0DC1FD0D13E00E146D0 /* ToDoViewController.swift */; };
@@ -53,6 +54,7 @@
 		B40584C71FC87C8F00543EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40584D31FC881BA00543EE0 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		B40584D51FC882AA00543EE0 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		B40E55B71FD606D500E43FD9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B425A9751FD45076002221DB /* checkmark-flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-flat.png"; sourceTree = "<group>"; };
 		B425A9761FD45076002221DB /* checkmark-flat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-flat-2.png"; sourceTree = "<group>"; };
 		B466E0DC1FD0D13E00E146D0 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				B40584D51FC882AA00543EE0 /* ToDoTableViewController.swift */,
 				B466E0DC1FD0D13E00E146D0 /* ToDoViewController.swift */,
 				B40584A91FC87C8F00543EE0 /* Main.storyboard */,
+				B40E55B71FD606D500E43FD9 /* AuthViewController.swift */,
 				B40584AC1FC87C8F00543EE0 /* Assets.xcassets */,
 				B425A9761FD45076002221DB /* checkmark-flat-2.png */,
 				B425A9751FD45076002221DB /* checkmark-flat.png */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40E55B81FD606D500E43FD9 /* AuthViewController.swift in Sources */,
 				B466E0DD1FD0D13E00E146D0 /* ToDoViewController.swift in Sources */,
 				B40584A61FC87C8F00543EE0 /* AppDelegate.swift in Sources */,
 				B40584D61FC882AA00543EE0 /* ToDoTableViewController.swift in Sources */,

@@ -42,8 +42,8 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
     }
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        
         navigationItem.leftBarButtonItem = editButtonItem
         if let savedToDos = ToDo.loadToDos() {
             todos = savedToDos
