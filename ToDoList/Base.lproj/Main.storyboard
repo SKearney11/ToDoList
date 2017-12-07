@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nej-hs-aUS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nej-hs-aUS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Authentication-->
         <scene sceneID="DO8-7o-4Gx">
             <objects>
                 <viewController id="acy-CS-Ym7" customClass="AuthViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yhh-Va-KGJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ad5-uK-N4J"/>
+                    <navigationItem key="navigationItem" title="Authentication" id="ad5-uK-N4J"/>
                     <connections>
                         <segue destination="Pc0-9D-rYI" kind="show" identifier="bioAuth" id="xAI-XL-UIO"/>
                     </connections>
